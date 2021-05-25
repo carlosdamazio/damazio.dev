@@ -130,16 +130,18 @@ techSkills: |
     - Go
     - Scala
     - Java
-    - C
+    - Rust 
 
-    **Databases**
+    **Databases and caching**
     - PostgreSQL
     - MySQL/MariaDB
     - MongoDB
     - OracleDB
+    - Elasticsearch 
     - Apache Cassandra
     - Apache HBase
     - Apache Hive
+    - Redis
     
     **VCS**
     - Git
