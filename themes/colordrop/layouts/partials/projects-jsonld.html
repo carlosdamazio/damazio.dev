@@ -1,0 +1,27 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Projects",
+  "url": "{{ .Permalink }}",
+  "headline": "{{ .Title }} - {{ .Site.Title }}",
+  "description": "{{ .Site.Params.description }}",
+  "author": {
+    "@type": "Person",
+    "name": "{{ .Site.Author.name }}",
+    {{ with .Site.GetPage "/curriculum" }}
+      "url": "{{ .Permalink }}"
+    {{ end }}
+  },
+  "singleProject": [
+    {{ range $index, $page := .Pages }}
+      {{ if $index }},{{ end }}
+      {
+        "@type": "SingleProject",
+        "headline": "{{ $page.Title }}",
+        "url": "{{ $page.Permalink }}",
+        "datePublished": "{{ $page.PublishDate.Format "2006-01-02" }}",
+        "description": "{{ $page.Description }}"
+      }
+    {{ end }}
+  ]
+}
+

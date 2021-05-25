@@ -1,0 +1,26 @@
+{{ define "jsonLD" }}
+  <script type="application/ld+json">
+    {{ partial "projects-jsonld" . | safeJS }}
+  </script>
+{{ end }}
+
+{{ define "main" }}
+  <h1 class="text-center">Projects</h1>
+
+  {{ range .Paginator.Pages }}
+    <article>
+        <h2 class="title">
+            <a href="{{ .Permalink }}">{{ .Title }}</a>
+            {{ if isset .Params "repository" }} 
+                [<a href="{{ index .Params "repository" }}">Repo</a>]
+            {{ end }}
+        </h2>
+      {{ .Description }}
+    </article>
+    
+  {{ end }}
+  
+  <hr/>
+ 
+  {{ template "_internal/pagination.html" . }}
+{{ end }}
