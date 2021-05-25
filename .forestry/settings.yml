@@ -4,14 +4,6 @@ auto_deploy: false
 admin_path: 
 webhook_url: 
 sections:
-- type: document
-  path: content/resume.pt-br.md
-  label: resume-pt
-  match: "**/*"
-- type: document
-  path: content/resume.en.md
-  label: resume-en
-  match: "**/*"
 - type: directory
   path: content
   label: Pages
@@ -27,6 +19,12 @@ sections:
   label: Projects
   create: all
   match: "**/*"
+- type: document
+  path: content/resume.pt-br.md
+  label: resume-pt
+- type: document
+  path: content/resume.en.md
+  label: resume-en
 upload_dir: static/uploads
 public_path: "/uploads"
 front_matter_path: ''
