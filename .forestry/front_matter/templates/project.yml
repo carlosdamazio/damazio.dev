@@ -14,3 +14,8 @@ fields:
 - type: text
   name: title
   label: title
+- name: repository
+  type: text
+  config:
+    required: false
+  label: repository
