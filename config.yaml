@@ -1,0 +1,99 @@
+baseURL: https://damazio.dev/
+DefaultContentLanguage: en
+title: Carlos Damázio
+theme: colordrop
+enableRobotsTXT: true
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+author:
+  name: Carlos Damázio
+  job: Computer scientist 
+  gender: male
+  image: img/me.png
+  github: carlosdamazio
+  twitter: carlosdamazio_
+  linkedin: carlosdamazio 
+
+taxonomies:
+  tag: tags
+
+menu:
+  main:
+    - identifier: curriculum
+      name: Resume
+      url: resume/
+      weight: 4
+    - identifier: blog
+      name: Posts
+      url: blog/
+      weight: 2
+    - identifier: tags
+      name: Tags
+      url: tags/
+      weight: 3
+    - identifier: project
+      name: Projects
+      url: projects/
+  footer:
+    - identifier: github
+      name: github
+      url: https://github.com/carlosdamazio/
+      weight: 1
+    - identifier: twitter
+      name: twitter
+      url: https://twitter.com/carlosdamazio_/
+      weight: 2
+    - identifier: linkedin
+      name: linkedin
+      url: https://linkedin.com/in/carlosdamazio/
+      weight: 3
+    - identifier: keybase
+      name: keybase
+      url: https://keybase.io/carlosdamazio/
+      weight: 4
+    - identifier: rss
+      name: rss
+      weight: 5
+    - identifier: curriculum
+      name: curriculum
+      url: curriculum/
+      weight: 6
+    - identifier: email
+      name: email
+      url: mailto:hello@damazio.dev
+      weight: 7
+
+params:
+  title: Carlos Damázio
+  description: As a personal project with the purpose to help some friends and myself as well, this is a blog to put my career's knowledge and some of my learning process to the public, from data engineering, DevOps and software development, to soft skills and other things that I think that would be nice to share.
+  images:
+    - img/profile.jpg
+  themeColor: "#352730"
+  themeInverseColor: "#ffffff"
+  siteLogo: img/profile.jpg
+
+  license:
+    name: Attribuition-ShareAlike
+    type: by-sa
+    version: "4.0"
+    locale: en
+    size: 88x31
+
+languages:
+  en:
+    languageName: English
+    weight: 1
+  pt-br:
+    languageName: Português Brasileiro
+    weight: 2
+    params:
+      description: De um projeto pessoal, com incentivo de uns amigos, à vida. Esse é o meu blog, onde vou tratar de vários assuntos, em especial, engenharia de dados, DevOps, desenvolvimento de software e outras coisas pessoais. Quero trazer algo às pessoas que eu queria que houvesse quando eu estava começando na carreira.
+      license:
+        name: Atribuição-CompartilhaIgual
+        version: "4.0"
+        locale: pt_BR
+        size: 88x31
