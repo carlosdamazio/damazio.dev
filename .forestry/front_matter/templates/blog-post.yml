@@ -1,0 +1,27 @@
+---
+label: Blog post
+hide_body: false
+fields:
+- type: text
+  name: title
+  label: title
+- type: text
+  name: summary
+  label: summary
+- type: datetime
+  name: publishDate
+  label: publishDate
+- type: image_gallery
+  name: images
+  label: images
+- type: text
+  name: slug
+  label: slug
+- type: list
+  name: tags
+  label: tags
+- type: list
+  name: aliases
+  label: aliases
+pages:
+- content/blog/parte-1-criando-um-ambiente-para-microsservicos-planejamento.md

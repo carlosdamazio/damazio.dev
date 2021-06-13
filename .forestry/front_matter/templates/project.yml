@@ -1,0 +1,21 @@
+---
+label: Project
+hide_body: false
+fields:
+- type: text
+  name: description
+  label: description
+- type: text
+  name: linkTitle
+  label: linkTitle
+- type: text
+  name: slug
+  label: slug
+- type: text
+  name: title
+  label: title
+- name: repository
+  type: text
+  config:
+    required: false
+  label: repository
