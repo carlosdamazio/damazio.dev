@@ -1,5 +1,5 @@
 ---
-title: Data Mesh - Conceitos e o problema dos "silos" [Parte 1]
+title: Data Mesh - Conceitos e Arquitetura [Parte 1]
 summary: Este é o começo de uma série de posts a respeito de Data Mesh. Neste post, vamos discutir aspectos teóricos e arquiteturais que servirão de base para posts futuros.
 publishDate: 2021-06-13
 images:
