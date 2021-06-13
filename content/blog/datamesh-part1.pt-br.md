@@ -9,7 +9,7 @@ tags: ["data engineering", "theoretical", "architecture"]
 aliases: [
   "/blog/datamesh-parte-1"
 ]
-draft: false
+draft: true
 
 ---
 
