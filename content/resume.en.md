@@ -120,7 +120,6 @@ languages: |
 
     - Portuguese (Native)
     - English (Native-*ish*)
-    - Chinese (Basic)
     - Japanese (Basic)
 
 techSkills: |
@@ -131,7 +130,6 @@ techSkills: |
     - Go
     - Scala
     - Java
-    - Rust 
 
     **Databases and caching**
     - PostgreSQL
