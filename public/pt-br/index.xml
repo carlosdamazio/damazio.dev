@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Carlos Damázio</title>
+    <link>https://damazio.dev/pt-br/</link>
+    <description>Recent content on Carlos Damázio</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Mon, 24 May 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://damazio.dev/pt-br/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Olá! Mais um reboot do blog</title>
+      <link>https://damazio.dev/pt-br/blog/hello-world-pt-br/</link>
+      <pubDate>Mon, 24 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://damazio.dev/pt-br/blog/hello-world-pt-br/</guid>
+      <description>Vou falar de como é rebootar mais um blog e de quebra ensino como criar um usando o Hugo.</description>
+    </item>
+    
+    <item>
+      <title>Curriculum</title>
+      <link>https://damazio.dev/pt-br/resume/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://damazio.dev/pt-br/resume/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Dist-crawler</title>
+      <link>https://damazio.dev/pt-br/projects/distcrawler/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://damazio.dev/pt-br/projects/distcrawler/</guid>
+      <description>A proposal for a distributed web crawler built upon RPC communication protocol.
+What is it, really? Well, I&amp;rsquo;m learning Go. So, instead of building a CRUD application, I decided to build something that I had in mind. It&amp;rsquo;s a dead simple Web Crawler that works on a Master -&amp;gt; Node architecture. It&amp;rsquo;s currently in development, so I have a few remarks on it:
+ It has a single node feature. In the future, the crawler must accept more than one node connection to make parallel processing and load balancing; It&amp;rsquo;s not using the concurrency features that Go has to offer; It uses RPC communication.</description>
+    </item>
+    
+    <item>
+      <title>PyPortugol</title>
+      <link>https://damazio.dev/pt-br/projects/pyportugol/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://damazio.dev/pt-br/projects/pyportugol/</guid>
+      <description>Small project for a &amp;ldquo;Portugol&amp;rdquo; transpiler made in Python 3.6
+Installation Just clone the repository and install dependencies.
+$ git clone git@github.com:carlosdamazio/pyportugol.git $ cd pyportugol &amp;amp;&amp;amp; pip install -r requirements.txt Usage On main.py, you can see the text input for the transpiler. I&amp;rsquo;ll add the language specs later.
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21  from lexer.</description>
+    </item>
+    
+    <item>
+      <title>Python AISWEB</title>
+      <link>https://damazio.dev/pt-br/projects/python-aisweb/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://damazio.dev/pt-br/projects/python-aisweb/</guid>
+      <description>Python AISWEB This is an API Wrapper for the Brazilian Aeronautical Information Service from DECEA&amp;rsquo;s AISWEB system. If you&amp;rsquo;re a developer who wants to use this API and want to check the docs for usage, please contact DECEA (Departamento de Controle do Espaço Aéreo) to get your API Key in https://aisweb.decea.gov.br/.
+Installation With pip installed, just install the package with it. Simple as that:
+pip install python-aisweb Usage from python_aisweb import AISWEB a = AISWEB(&amp;#39;&amp;lt;API_KEY&amp;gt;&amp;#39;, &amp;#39;&amp;lt;API_PASS&amp;gt;&amp;#39;) # Response comes in XML by default.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -109,11 +109,12 @@ employment: |
     - Created proof-of-concepts;
 
     Tools and concepts used: MongoDB (sharding mode too); Elasticsearch; Graylog; Prometheus; Alert Manager; Docker Registry; Nginx; HAProxy; OnlyOffice Document Server; Nextcloud; SMTP integration; Load Balancing; Reverse Proxy; Debian packaging.
-    
+
 education: |
 
-    ### Bachelor's degree in Computer Science
-    *January 2011 to January 2015*
+    ### Centro Universitário de Brasília - UniCEUB
+    *February 2014 to December 2018*
+    **Bachelor's degree in Computer Science**
 
 languages: |
 
