@@ -45,15 +45,15 @@ ficou tão complexa que foi necessário criar uma subdivisão com o advento do *
 
 ## Big Data
 
-É uma área de estudo na computação, que é bastante recente que lida em como lidamos com dados que necessáriamente possuem complexidade em 3 aspectos, que podem estar presentes em conjunto ou não, com os quais chamamos de *3Vs*.
+É uma área de estudo na computação, que é bastante recente que lida em como lidamos com dados que necessariamente possuem complexidade em 3 aspectos, que podem estar presentes em conjunto ou não, com os quais chamamos de *3Vs*.
 ![Diagrama dos 3Vs do Big Data](https://upload.wikimedia.org/wikipedia/commons/e/ee/Big_Data.png)
 *Fonte: [Wikipédia](https://en.wikipedia.org/wiki/Big_data#/media/File:Big_Data.png)*
 
 ### Volume 
 Este aspecto em Big Data diz respeito ao grande volume de dados manipulados e armazenados.
 
-Lembra quando achávamos o *gigabyte* uma ordem de grandeza estrondante? Pois é, agora básicamente podemos comprar discos rígidos e SSDs nas ordens de *terabyte* por troco de pão.
-Não podemos falar somente do armazenamento, mas sim de quanto de volume é trafegado nos nossos sistemas de dados. Hoje, é sabido que na internet é trafegado mais de 100.000 *petabytes*, ou seja: mais de 100.000.000.000 *gigabytes*.
+Lembra quando achávamos o *gigabyte* uma ordem de grandeza estrondante? Pois é, agora basicamente podemos comprar discos rígidos e SSDs nas ordens de *terabyte* por troco de pão.
+Não podemos falar somente do armazenamento, mas sim de quanto de volume é trafegado nos nossos sistemas de dados. Hoje, é sabido que na internet é trafegado mais de 100.000 *petabytes/ano*, ou seja: mais de 100.000.000.000 *gigabytes/ano*.
 
 ### Velocidade
 Este aspecto em Big Data diz a respeito da velocidade e frequência com as quais manipulamos os dados.
@@ -66,7 +66,7 @@ vez mais rápido, não podemos mais confiar em processamento *batch* (em lote), 
 Este aspecto em Big Data diz a respeito da variedade de dados com os quais manipulamos.
 
 Observe como a gente se relaciona hoje em dia na internet: no Twitter, Instagram, Telegram e afins. Tem amizades que a gente se comunica através de memes, de imagens. Como poderíamos ter previsto este tipo de comunicação há 20 anos atrás.
-Óbviamente, a grande maioria das pessoas não sabia que isso iria acontecer. Na internet, mais do que simplesmente falando que está sendo trafegado uma cadeia de bytes para todos os lados (leia-se texto), está sendo trafegado imagens, e-mails,
+Obviamente, a grande maioria das pessoas não sabia que isso iria acontecer. Na internet, mais do que simplesmente falando que está sendo trafegado uma cadeia de bytes para todos os lados (leia-se texto), está sendo trafegado imagens, e-mails,
 mensagens de voz, vídeos, planilhas. Quanto mais dados puderem ser analisados, maiores serão as chances de sucesso de uma organização.
 
 
@@ -123,7 +123,7 @@ Vamos pra isso então.
 
 ## Data Mesh
 
-É uma proposta arquitetural de um projeto de dados que foca da descentralização da
+É uma proposta arquitetural de um projeto de dados que foca na descentralização da
 área de dados de uma organização em múltiplas áreas de domínios. Este modelo visa em tentar fazer o mesmo que temos com
 DevOps: desburocratizar o processo de automação do fluxo de trabalho dos profissionais de dados.
 
@@ -164,7 +164,7 @@ A grande proposta desta arquitetura é a quebra dos silos. E eu mostro rapidamen
 
 A questão é a seguinte: diferentes áreas da TI, com suas operações e serviços, emitem dados que podem ser úteis à
 organização, oferecendo valiosíssimos insights. A única barreira que impede isso é a burocratização que leva a falta de comunicação,
-quebra de expectativas e afins. Ao invés disso, por que a equipe não poder lidar diretamente com os próprios dados e disponibilizar da forma que convém aos seus clientes?
+quebra de expectativas e afins. Ao invés disso, por que a equipe não pode lidar diretamente com os próprios dados e disponibilizar da forma que convém aos seus clientes?
 
 Porque também devemos nos perguntar: quem tem maior domínio dos dados? Não seria a área de domínio destes dados? É essa também a importância da multidisciplinaridade
 das equipes, trazendo múltiplos pontos de vistas que podem somar em nosso trabalho!
@@ -185,7 +185,7 @@ feature vai estar no final de um Backlog cheio de débito técnico, issues a ser
 dominação mundial de outros clientes~~.
 
 ![Equipes](https://martinfowler.com/articles/data-monolith-to-mesh/siloed-teams.png)
-O problema está nisso, tem uma equipe hyper especializada em dados, fechada em seu próprio mundo ditando regras para plataforma.
+O problema está nisso, tem uma equipe híper especializada em dados, fechada em seu próprio mundo ditando regras para plataforma.
 Nesta equipe, é quase impossível empatizar com todos os clientes, pois são centenas de áreas que querem receber insights de seus dados.
 Cada qual com sua necessidade.
 
@@ -240,7 +240,7 @@ Eu não sei quantos posts esse projeto irá necessitar para ser esclarecido em q
 ## Conclusão
 
 Eu sei que o post foi longo e eu agradeço muito por você ter chegado ao final! Se você chegou ao fim, por favor,
-deem o seu feedback a respeito deste post. Podem encontrar os meus contatos pelo meu próprio blog.
+deem o seu feedback a respeito deste post. Podem encontrar os meus contatos no *footer* do blog, ou me chamem no telegram em @damnazio.
 
 A respeito do projeto, a próxima etapa será de definição do que iremos fazer de implementação prática e começaremos com
 a ingestão dos dados.
