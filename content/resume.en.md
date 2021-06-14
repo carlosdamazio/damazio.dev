@@ -126,10 +126,10 @@ techSkills: |
 
     **Programming languages**
     - Python
-    - Shell
+    - Bash
     - Go
-    - Scala
     - Java
+    - C
 
     **Databases and caching**
     - PostgreSQL

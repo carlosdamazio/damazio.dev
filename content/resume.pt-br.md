@@ -121,18 +121,16 @@ languages: |
 
     - Português (Nativo)
     - Inglês (Nativo/Avançado)
-    - Chinês (Básico)
     - Japonês (Básico)
 
 techSkills: |
 
     **Linguagens de programação**
     - Python
-    - Shell
+    - Bash
     - Go
-    - Scala
     - Java
-    - Rust
+    - C
 
     **Bancos de dados e cacheamento**
     - PostgreSQL
