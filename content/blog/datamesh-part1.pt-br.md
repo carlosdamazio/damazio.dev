@@ -1,7 +1,7 @@
 ---
 title: Data Mesh - Conceitos e Arquitetura [1]
 summary: Este é o começo de uma série de posts a respeito de Data Mesh. Neste post, vamos discutir aspectos teóricos e arquiteturais que servirão de base para posts futuros.
-publishDate: 2021-06-13
+publishDate: 2021-06-14
 images:
   - /img/post-datamesh-part-1/datamesh-part1-title.png
 slug: datamesh-parte-1
@@ -9,7 +9,7 @@ tags: ["data engineering", "theoretical", "architecture"]
 aliases: [
   "/blog/datamesh-parte-1"
 ]
-draft: true
+draft: false
 
 ---
 
@@ -22,7 +22,7 @@ de tudo isso?
 - Logo após, iremos discutir sobre data mesh e também arquiteturas como Lambda e Kappa.
 
 Sim, irei começar falando da parte teórica mais chatinha. Isso é extremamente necessário. Sem a teoria, fica muito mais difícil você correlacionar a prática,
-não vai haver sentido no que estamos fazendo e não teremos profundidade para discutir certos aspectos do assunto e do que estamos fazendo.
+não vai haver sentido no que estamos fazendo e não teremos profundidade para discutir certos aspectos do assunto.
 
 ## Objetivo do projeto
 O nosso objetivo é entregar um cenário onde teremos uma Data Mesh e chegar a conclusão de que isso pode, ou não, ser o estado da arte no quesito de produto de dados.
@@ -31,21 +31,21 @@ Para isso, precisamos de um ponto de partida. A área de dados é bem conhecida 
 deveria: engenharia de dados. Sim, a questão da infraestrutura de dados se tornou tão complexa que tirou o papel do cientista de dados, conceitualmente falando, neste processo.
 
 ## Overview da Área de Dados
-Podemos chegar ao consenso de que a área de dados NÃO é uma área de estudo consolidada e formalizada como Sistemas Distribuídos, Teoria da Computação, Inteligência Artificial e dentre outras na ciência da computação, mas sim como uma área multidisciplinar, que envolve Estatística, Álgebra Linear, SGBD e, também, Algorítmos e Estrutura de dados.
+Podemos chegar ao consenso de que a área de dados NÃO é uma área de estudo consolidada e formalizada como Sistemas Distribuídos, Teoria da Computação, Inteligência Artificial e dentre outras na ciência da computação, mas sim como uma área multidisciplinar, que envolve Estatística, Álgebra Linear, SGBD e, também, Algorítmos e Estrutura de Dados.
 
 Não irei entrar em detalhes de como surgiu todos os conceitos a respeito de engenharia de dados, mas toda a pesquisa indica que estudos a respeito de dados e das áreas de pesquisa a respeito de como
-lidamos e manipulamos estes dados vem desde a década de 80, quando falamos de temas como data warehouse (autores de referência: Kimball e Inmon), como sistemas de apoio a tomada de decisões das organizações, que fazem parte do escopo de
-**business intelligence**.
+lidamos e manipulamos estes dados vem desde a década de 80, quando falamos de temas como data warehouse (autores de referência: Kimball e Inmon), sistemas de apoio a tomada de decisões das organizações, que fazem parte do escopo de
+**Business Intelligence**.
 
 Parte-se da premissa que BI se preocupa em tomar decisões com base em dados passados, e com passar dos tempos, houve a necessidade de conseguir, além de aprender com o passado, identificar padrões
-com análises científicas e estatísticas, sem se basear em feeling que temos com relação aos dados, que, inclusive, é um problema que ainda temos hoje em dia, né não!? Com isso, nasce a área de **ciência de dados**.
+com análises científicas e estatísticas. Com isso, nasce a área de **Ciência de Dados**.
 
 Temos também a necessidade de automatizar o aprendizado em que podemos identificar padrões nos dados sem a nossa intervenção humana para sua codificação, que é a área de **Aprendizado de Máquina**. Veja que todas estas áreas estão interligadas em dados, literalmente! Todas elas precisam destes como insumo. E, claro, a forma com a qual se obtem estes insumos
 ficou tão complexa que foi necessário criar uma subdivisão com o advento do **Big Data**.
 
 ## Big Data
 
-É uma área de estudo na computação que é bastante recente que lida em como lidamos com dados que necessáriamente possuem complexidade em 3 aspectos, que podem estar presentes em conjunto ou não, com os quais chamamos de *3Vs*.
+É uma área de estudo na computação, que é bastante recente que lida em como lidamos com dados que necessáriamente possuem complexidade em 3 aspectos, que podem estar presentes em conjunto ou não, com os quais chamamos de *3Vs*.
 ![Diagrama dos 3Vs do Big Data](https://upload.wikimedia.org/wikipedia/commons/e/ee/Big_Data.png)
 *Fonte: [Wikipédia](https://en.wikipedia.org/wiki/Big_data#/media/File:Big_Data.png)*
 
@@ -66,7 +66,7 @@ vez mais rápido, não podemos mais confiar em processamento *batch* (em lote), 
 Este aspecto em Big Data diz a respeito da variedade de dados com os quais manipulamos.
 
 Observe como a gente se relaciona hoje em dia na internet: no Twitter, Instagram, Telegram e afins. Tem amizades que a gente se comunica através de memes, de imagens. Como poderíamos ter previsto este tipo de comunicação há 20 anos atrás.
-Óbviamente, eu nunca iria previr porque eu tinha 5 anos de idade, mas a grande maioria das pessoas não previam isso acontecer. Na internet, mais do que simplesmente falando que está sendo trafegado uma cadeia de bytes para todos os lados (leia-se texto), está sendo trafegado imagens, e-mails,
+Óbviamente, a grande maioria das pessoas não sabia que isso iria acontecer. Na internet, mais do que simplesmente falando que está sendo trafegado uma cadeia de bytes para todos os lados (leia-se texto), está sendo trafegado imagens, e-mails,
 mensagens de voz, vídeos, planilhas. Quanto mais dados puderem ser analisados, maiores serão as chances de sucesso de uma organização.
 
 
@@ -104,8 +104,8 @@ Conhece-se o processo de ETL como *Extract, Transform and Load*: Extrair, Transf
 *Fonte: [SAS](https://www.sas.com/pt_br/insights/data-management/o-que-e-etl.html)*
 
 ### Extrair
-É o processo de extração dos dados brutos que iremos retirar da origem, podendo ser um banco de dados, rede social, sensores e dentre outros. Todo sistema tem, ou deveria ter, um *escapamento* aos dados com relação ao seu funcionamento e ações tomadas
-dentro destes. Geralmente, estes dados são carregados dentro de uma área de staging, como se fosse um *parquinho* dos engenheiros de dados para poder manipular os dados.
+É o processo de extração dos dados brutos que iremos retirar da origem, podendo ser um banco de dados, rede social, sensores e dentre outros. Todo sistema tem, ou deveria ter, um *escapamento* de dados com relação ao seu funcionamento e ações tomadas
+dentro destes. Geralmente, estes dados são carregados dentro de uma área de staging, como se fosse um *parquinho* dos engenheiros de dados para poderem manipular os dados.
 
 ### Transformar
 É o processo de transformar os dados brutos, que estão muitas vezes em formatos não legíveis para análises, em dados refinados e prontos para uso.
@@ -170,7 +170,7 @@ Porque também devemos nos perguntar: quem tem maior domínio dos dados? Não se
 das equipes, trazendo múltiplos pontos de vistas que podem somar em nosso trabalho!
 
 Eu vou admitir, esta parte em que falo de Data Mesh é bastante influenciada por um artigo que li no blog do Martin Fowler *[How to Move Beyond a Monolithic Data Lake to a Distributed Data Mesh](https://martinfowler.com/articles/data-monolith-to-mesh.html)*
-escrito por Zhamak Dehghani. Não há muito tempo em que este conceito apareceu, graças a ela, fazendo com que este modelo seja recomendado pela ThoughtWorks em seu [Technology Radar](https://www.thoughtworks.com/radar/techniques/data-mesh).
+escrito por Zhamak Dehghani. Não há muito tempo em que este conceito apareceu e, graças a ela, fez com que este modelo seja recomendado pela ThoughtWorks em seu [Technology Radar](https://www.thoughtworks.com/radar/techniques/data-mesh).
 Vou pegar emprestado alguns diagramas que ela fez a respeito das problemáticas da não adoção desta arquitetura e da adoção da mesma no artigo escrito por ela.
 
 ![Plataforma de dados centralizada](https://martinfowler.com/articles/data-monolith-to-mesh/no-domain-data-platform.png)
@@ -219,21 +219,17 @@ Ambos são diferentes apenas no quesito de processamento. Na arquitetura Lambda,
 componentes diferentes, aumentando a carga cognitiva com relação a arquitetura do sistema. Já na arquitetura Kappa, podemos utilizar um componente de processamento
 híbrido para processar ambos os dados.
 
+![Lambda Architecture](https://dmgpayxepw99m.cloudfront.net/lambda-16338c9225c8e6b0c33a3f953133a4cb.png)
+*Fonte: [Arquitetura Lambda](https://www.oreilly.com/radar/questioning-the-lambda-architecture/)*
+![Kappa Architecture](https://dmgpayxepw99m.cloudfront.net/kappa-61d0afc292912b61ce62517fa2bd4309.png)
+*Fonte: [Arquitetura Kappa](https://www.oreilly.com/radar/questioning-the-lambda-architecture/)*
+
 Recomendo a leitura da [arquitetura Kappa](http://milinda.pathirage.org/kappa-architecture.com/) e a [Lambda](https://en.wikipedia.org/wiki/Lambda_architecture). Estas duas arquiteturas, apesar de resolverem problemas, óbviamente, não resolvem o problema de acoplamento e silos que o
 data mesh propõe resolver.
 
 ## O projeto ambicioso
 
-Eu não sei quantos posts esse projeto irá necessitar para ser esclarecido em quesito de implementação, mas nada será baseado em achismo. Como em metodologia científica, vamos usar as seguintes etapas:
-
-1. Observação
-2. Elaboração do problemas
-3. Hipóteses
-4. Experimentos
-5. Análise
-6. Conclusão
-
-E prometo que:
+Eu não sei quantos posts esse projeto irá necessitar para ser esclarecido em quesito de implementação, mas nada será baseado em achismo. E prometo que:
 
 - Explicarei vários componentes que iremos usar e quais problemas eles resolvem;
 - Benchmark destes componentes serão feitos;
