@@ -23,5 +23,3 @@ fields:
 - type: list
   name: aliases
   label: aliases
-pages:
-- content/blog/parte-1-criando-um-ambiente-para-microsservicos-planejamento.md
