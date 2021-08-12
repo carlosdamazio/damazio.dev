@@ -87,14 +87,3 @@ languages:
   en:
     languageName: English
     weight: 1
-  pt-br:
-    languageName: Português Brasileiro
-    weight: 2
-    params:
-      description: De um projeto pessoal, com incentivo de uns amigos, à vida. Esse é o meu blog, onde vou tratar de vários assuntos, em especial, engenharia de dados, DevOps, desenvolvimento de software e outras coisas pessoais. Quero trazer algo às pessoas que eu queria que houvesse quando eu estava começando na carreira.
-      license:
-        name: Atribuição-CompartilhaIgual
-        type: by-sa
-        version: "4.0"
-        locale: pt_BR
-        size: 88x31

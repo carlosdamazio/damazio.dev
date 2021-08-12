@@ -41,64 +41,67 @@ I'm not going in-depth of how everything in Data Engineering or Data Science cam
 We assume that business intelligence deals with decisions based on past data on a reactive way. As the time passes by, there was a need to deal with past behavior AND identify patterns using scientific analysis along with statistics. 
 With that, data science was born.
 
-As well, there was a need to automate the way we identify patterns in our data without human intervention
+As well, there was a need to automate the way we identify patterns in our data without human intervention, so then we have **machine learning**. All of this fields are strongly related to data.
+Even the data intake, storage and aggregation became so complex that it was needed to separate these processes into a separate field, which is data engineering. But before we talk about it, let's talk about the main reason why
+we needed to separate it from the others in the first place: **big data**.
 
 ## Big Data
 
-É uma área de estudo na computação que é bastante recente que lida em como lidamos com dados que necessáriamente possuem complexidade em 3 aspectos, que podem estar presentes em conjunto ou não, com os quais chamamos de *3Vs*.
+It's a study topic that's pretty much recent when compared to computer science in general, and it deals with high complexity data in, generally, 3 aspects (it's what we call the 3 Vs from Big Data):
 ![Diagrama dos 3Vs do Big Data](https://upload.wikimedia.org/wikipedia/commons/e/ee/Big_Data.png)
 *Fonte: [Wikipédia](https://en.wikipedia.org/wiki/Big_data#/media/File:Big_Data.png)*
 
 ### Volume 
-Este aspecto em Big Data diz respeito ao grande volume de dados manipulados e armazenados.
+This Big Data's feature is about the huge volume that data can traffic through our networks or pipelines.
 
-Lembra quando achávamos o *gigabyte* uma ordem de grandeza estrondante? Pois é, agora básicamente podemos comprar discos rígidos e SSDs nas ordens de *terabyte* por troco de pão.
-Não podemos falar somente do armazenamento, mas sim de quanto de volume é trafegado nos nossos sistemas de dados. Hoje, é sabido que na internet é trafegado mais de 100.000 *petabytes*, ou seja: mais de 100.000.000.000 *gigabytes*.
+I guess we can recall that time when we used to think that *gigabytes* was a measurement of huge amount of data, specially when we had our HDDs with 250GB at best. This is no longer the norm, we are already at the *terabytes* realm and we want more!
+Also, we can no longer say this feature is all about the storage size, but with it's speed as well. We already know that in the internet, there's about 100k *petabytes* being moved around per year and growing.
 
-### Velocidade
-Este aspecto em Big Data diz a respeito da velocidade e frequência com as quais manipulamos os dados.
+### Velocity
+This feature is about the speed that data can traffic.
 
-Além de termos que lidar com dados em grandes volumes, temos que lidar com estes em bastante velocidade.
-Eu citei que antes a gente lidava com dados do passado para tomar decisões em organizações, mas com o advento da globalização e internet, todo o mundo se acelerou, literalmente, em tudo. Com mais dados armazenados e com necessidade de processamento cada
-vez mais rápido, não podemos mais confiar em processamento *batch* (em lote), dando mais espaço para processamento em tempo real até mesmo para prever com precisão o que acontecerá no futuro.
+I explained before that since the beginning, we'd dealt with past data to support the organization's decision making. Now, with the whole world connected through the internet, everything
+got faster. We can communicate faster and interact faster, so why doesn't organizations do the same when we apply this train of thought to their processes and data? We have much more
+input than ever, and it's the beginning, since the IOT is starting to rise, so we'll have much more data incoming and being generated not only by we, the humans, but by devices.
 
-### Variedade
-Este aspecto em Big Data diz a respeito da variedade de dados com os quais manipulamos.
+### Variety
+This feature is about the different kinds of data that we can handle.
 
-Observe como a gente se relaciona hoje em dia na internet: no Twitter, Instagram, Telegram e afins. Tem amizades que a gente se comunica através de memes, de imagens. Como poderíamos ter previsto este tipo de comunicação há 20 anos atrás.
-Óbviamente, eu nunca iria previr porque eu tinha 5 anos de idade, mas a grande maioria das pessoas não previam isso acontecer. Na internet, mais do que simplesmente falando que está sendo trafegado uma cadeia de bytes para todos os lados (leia-se texto), está sendo trafegado imagens, e-mails,
-mensagens de voz, vídeos, planilhas. Quanto mais dados puderem ser analisados, maiores serão as chances de sucesso de uma organização.
+Take a moment to appreciate the fact that, nowadays, there are some of our friendships that we communicate through memes. Yes, you read that right, through memes. This is something that wasn't
+possible 20 years ago, and some might even eye-roll this fact and ask what's the point. It's not about the memes. We are using images and other kinds of data to communicate to our peers.
+If we can extract value from text data, why can't we extract some insights from images, sounds, or blog posts? What if we could analyze and extract insights of them altogether?
+
+Can you note the fact that data handling became a complex task to be dealt with nowadays? There's no way we could use traditional data analysis or handling from 20/30 years ago to the same
+data ecosystem that we have nowadays. This is why the data mungling task is no longer the *obligation* of a data scientist, but in fact, to a data engineer. So let's talk about the data engineering.
 
 
-Percebe como a forma que manipulamos os dados hoje em dia pode ser algo bastante complexo? Não são cabíveis os métodos tradicionais de analisar e processar os dados, nem mesmo os de armazenamento. Para lidar com essa complexidade, foi necessário retirar das mãos dos analistas e cientistas de dados esta responsabilidade e criar uma nova área de estudos com relação a isso.
+## Data Engineering
+It's a multidisciplinary topic that is about data and its infrastructure handling. The data, in this context, may be considered Big Data or not, but the concept applies to both ways.
+We have multiple topics involved in the Data Engineering context:
 
-## Engenharia de dados
-É uma área multidisciplinar de estudos a respeito dos métodos e ferramentas de manipulação de dados, que podem ser considerados Big Data ou não. Novamente, é uma área totalmente multidisciplinar, pois tem-se vários aspectos envolvidos, como por exemplo:
+- Distributed Computing: it's a distributed system's study area that regards the processes, tools and techniques applied to computing with multiple devices.
+- Computer Netwroking: it's a study area of computing communication through all contexts.
 
-- Computação distribuída: área de estudos dos sistemas distribuídos, que consiste de computadores interligados por redes diferentes.
-- Rede de computadores: área de estudos de comunicação entre os computadores em mais variados aspectos.
+There may be other areas related to it, but the fact is that, in the data context, all of them overlap and form what we understand as Data Engineering, which its purpose is to
+study techniques and tools to handle and manipulate data.
 
-Podem haver outras áreas relacionadas, mas o importante é notar que a engenharia de dados é um *overlap* de várias áreas com o objetivo de estudar métodos e ferramentas para manipular dados.
+Before all of this came to be what it is, a data scientist had to download raw data, or at best, download its sample to work on. Then, needed to load this data to clean, format, store this new
+data into a database or such. AND then, it could make the analysis, IF, the data is structured. If the data is unstructured, you need to handle the datalake and extract data from text files, images, sounds, etc.
 
-Antigamente, havia-se o tempo em que, manualmente, tínhamos que fazer um cientista de dados baixar dados brutos, carregá-los em uma ferramenta
-para poder limpar, formatar, para depois serem aplicados os trabalhos de análise. Até porque hoje em dia, os dados não são apenas jogados em um
-banco de dados estruturado (SQL) e ser feliz. Dependendo do volume, há a necessidade de particionar as tabelas, reindexar e dentre outros processos
-para assegurar a persistência de dados. Naturalmente, com o aumento dos dados e complexidade, fica ainda mais complicado de consultar e armazenar os dados.
+So let me ask you, kind reader: which value does a Data Scientist brings to the table in all of these processes?
+The purpose of all of this ordeal is to extract insights from data in order to enable decision makers in an organization to take action upon it. Not only organizations, but ANYTHING
+that's data-driven is supposed to have benefits over this. The process of handling the data and its infrastructure is not the most valuable asset of a data scientist, but the analysis to extract the insights in the data.
 
-E falamos isso somente de SQL, agora imagine os NoSQL, onde podemos guardar QUALQUER COISA. O que um cientista de dados entrega de valor tendo que lidar com esse tanto de complexidade?
-O valor que este entrega são insights que terá nos dados, não em como otimizar a manipulação destes.
+The main asset of a data engineer is the optimization of both data flow and handling, which is an important role as well as of a data scientist. Without the engineers, we'd not
+have the infrastructure optimization to handle big data in any way, both storage or handling it (cleaning, parsing, filtering, etc). We can understand this concept as if it's like
+*DevOps* applied to data. With everything regarding the theoretical aspect out of our way, we might be able to start talking about Data Mesh. Not there yet, we need to know
+what a Data Pipeline is.
 
-Agora, um verdadeiro entregável na área de engenharia de dados estão na otimização do fluxo de dados e na sua manipulação. Podemos falar que seria como um *DevOps* dos dados.
-E é nisso que quero chegar como o menor componente entregável de um "Data Mesh".
+## Data Pipelining
+You might be familiar with the CI/CD pipelines, if you ever worked with DevOps concepts along your career. The main purpose of the pipeline is to automate processes and tasks
+regarding one's activities. So, intuitively, what's the main purpose of a data pipeline? Automate the data flow through the source to it's destination and make it ready for usage.
 
-## Pipeline de dados
-Quem já trabalhou com DevOps está familiarizado com o conceito de Pipeline CI/CD. O principal objetivo de uma Pipeline é
-automatizar etapas de trabalho para um determinado processo, como no caso, o processo de Integração Contínua e Entrega Contínua: o famoso *deploy*.
-
-O objetivo principal de uma pipeline de dados é automatizar o fluxo de dados no contexto de uma organização. Como os dados estarão disponíveis
-a estas com o objetivo de poder tirar vantagem em um ambiente extremamente competitivo? Com um processo automatizado e otimizado com a velocidade adequada ao fluxo destes dados.
-
-Conhece-se o processo de ETL como *Extract, Transform and Load*: Extrair, Transformar e Carregar. E sim, é o exemplo de etapas de uma Pipeline de Dados.
+What are the steps for a data pipeline? Well, the main one is the ETL steps, which consists of Extract, Transform and Load.
 
 ![ETL](https://www.sas.com/pt_br/insights/data-management/o-que-e-etl/_jcr_content/par/styledcontainer_bb5a/par/styledcontainer_6014/par/image_b840.img.png/1533588841097.png)
 *Fonte: [SAS](https://www.sas.com/pt_br/insights/data-management/o-que-e-etl.html)*
