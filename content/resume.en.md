@@ -6,7 +6,7 @@ name: Carlos Damázio
 jobTitle: Software Engineer
 locationName: Brasília, Brazil
 profile: |
-    I'm Carlos, a computer scientist from Brasilia, Federal District, Brazil. My interests range from systems engineering, data engineering and DevOps, using whatever tools are available to solve the problem presented.
+    I'm Carlos, a computer scientist from Brasilia, Federal District, Brazil. My interests range from systems development, data engineering and DevOps, using whatever tools are available to solve the problem presented.
 
 contact:
   - identifier: email
@@ -27,11 +27,22 @@ contact:
     url: https://linkedin.com/in/carlosdamazio/
 
 employment: |
-    
+
     ### Venmo
     *Software Engineer | May 2021 - Ongoing*
-    
-    Working as a software engineer in data infrastructure for Venmo.
+
+    Summary:
+    - Contractor via Taller Technologies.
+    - I'm working as a software engineer, as well as a data engineer, in the data infrastructure team.
+
+    Responsibilities:
+    - Maintains and develops data pipelines that powers up data warehouses such as SnowFlake and data lakes as AWS S3 object storage from various kinds of sources, ranging from structured, semi-structured and non-structured data.
+
+    Technologies and concepts used:
+    - Workflow and transformation processing: Luigi and Apache Spark.
+    - Data Warehouse: SnowFlake.
+    - Data Lake: AWS S3.
+    - Databases: MySQL and MongoDB.
 
     ### ília Digital
     *Tech Lead | August 2020 - May 2021*
@@ -86,7 +97,7 @@ employment: |
     *April 2018 - January 2019*
 
     **Python Instructor | April 2018 - January 2019**
-    
+
     Lectured online programming courses, mainly the Python Programming for Sysadmin course;
 
     **Fullstack Developer | April 2018 - January 2019**
@@ -96,11 +107,11 @@ employment: |
     - Developed new features and improved an already existing web-based automation and maintenance solution for ATMs and equipment that uses Open Source Software, acting on both front-end and back-end development;
     - Developed new features and improved an already existing web-based solution for managing Microsoft Exchange mailboxes, groups and users within this groups, acting on both front-end and back-end;
     - Gave maintenance assistance for a web-based application that controls an agnostic CI/CD Pipeline, giving better UI for non technical users and automating Infrastructure Provisioning within the CI/CD Pipeline;
-    
+
     Technologies and concepts used: Python; Django; DRF; Flask; Fabric API; Celery; Redis; AngularJS; jQuery; JavaScript; HTML5/CSS3; MongoDB; PostgreSQL; Docker; Gitlab; AWS; Access control (LDAP/Kerberos); Powershell and Exchange commands parsing; Ansible; Jenkins.
-    
+
     **Linux Infrastructure Analyst | April 2018 - January 2019**
-    
+
     Worked as an Infrastructure Analyst in Caixa Econômica Federal (CEF).
 
     - Engineered infrastructure solutions for clients, given their requirements;
@@ -127,21 +138,21 @@ techSkills: |
     **Programming languages**
     - Python
     - Bash
-    - Go
-    - Java
-    - C
+    - Go (learning)
+    - C++ (learning)
+    - Rust (learning)
 
     **Databases and caching**
     - PostgreSQL
     - MySQL/MariaDB
     - MongoDB
     - OracleDB
-    - Elasticsearch 
-    - Apache Cassandra
-    - Apache HBase
+    - Elasticsearch
+    - AWS Redshift
+    - SnowFlake
     - Apache Hive
     - Redis
-    
+
     **VCS**
     - Git
     - GitLab
@@ -150,19 +161,17 @@ techSkills: |
     **Data ingestion**
     - FluentD
     - Beats by Elastic
-    
-    **Data streaming**        
+
+    **Data streaming**
     - Apache Kafka
     - Kafka Connect
     - Kafka Streams
     - Apache Spark
-    
+
     **Workflow**
     - Apache Airflow
     - Apache NiFi
-    
-    **Cluster computing**
-    - Apache Hadoop
+    - Luigi
 
     **Public cloud providers**
     - Microsoft Azure
@@ -174,7 +183,7 @@ techSkills: |
     - RHEL
     - CentOS
     - Arch
-   
+
     **Containers and orchestration**
     - Docker
     - Docker Compose
@@ -194,7 +203,7 @@ techSkills: |
     **CI/CD**
     - Jenkins
     - Concourse CI
-    
+
     **Monitoring**
     - ELK Stack
     - Prometheus
@@ -209,7 +218,7 @@ techSkills: |
     - Apache Kafka Fundamentals - Confluent
 
 openSource: |
-    
+
     - [python-aisweb](https://github.com/carlosdamazio/python-aisweb)
     - [dist-crawler](https://github.com/carlosdamazio/dist-crawler)
     - [pyportugol](https://github.com/carlosdamazio/pyportugol)
